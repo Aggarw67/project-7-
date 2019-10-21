@@ -1,0 +1,48 @@
+# Project 7 Solutions
+
+# Student Name: Shiveeka Aggarwal
+
+# Peer Collaborators (if any) and nature of the collaboration NONE
+# TA help sought (if any) NONE
+# Online resources used (if any) and weblink for location of resources NONE
+
+# 1a. (1 pt)
+# Comment about method of solution: used the cat command to get the stanza displayed  
+Solution itself: cat /class/datamine/data/hidden/poem.txt 
+# Output from the solution: 
+# Do not go gentle into that good night,
+# Old age should burn and rave at close of day;
+# Rage, rage against the dying of the light.
+
+# 1b. (1 pt)
+# Comment about method of solution: downloaded the 2006 flights file to find the number of lfights in 2006 
+Solution itself: wc 2006.csv
+# Output from the solution: 7141923   7141923 672068096 2006.csv
+# header is included in the numbe rof fligths above therefore 7141922 is the final number of flights 
+
+# 2a. (2 pts)
+# Comment about method of solution: used the grep command to get information on the flights that departed from indy 
+Solution itself: grep "IND" 2006.csv > indyflights.csv
+# Output from the solution: got information about flights departing and arriving from and at indy 
+
+# 2b. (2 pts)
+# Comment about method of solution: used the grep command to save the information about the purchases on 1 January 2017
+Solution itself: grep "01-JAN-2017" /class/datamine/data/8451/The_Complete_Journey_2_Master/5000_transactions.csv > newyearsday.csv
+# Output from the solution: creates the newyearsday.csv file 
+
+# 2c. (1 pt)
+# Comment about method of solution:used the grep command to gather information about Purdue affiliated donors 
+Solution itself: grep "PURDUE" /class/datamine/data/election/itcont2018.txt > purduedonations.txt
+# Output from the solution: got the donations from purdue affiliated donors
+
+# 2d. (1 pt)
+# Comment about method of solution: used the grep command to get the donations made in 2018 from purdue related donors  
+Solution itself: wc purduedonations.txt
+# Output from the solution:  2237  17456 454332 purduedonations.txt
+# there are 2237 donations 
+
+# 3a. (2 pts)
+# Comment about method of solution: used the cut command to create a file 
+Solution itself: cut -d "," -f17,18 2006.csv > originsdestination.csv
+# Output from the solution: created a file 
+
